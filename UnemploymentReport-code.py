@@ -1,6 +1,4 @@
-from getpass import getpass
 import json
-
 import requests
 from dotenv import dotenv
 
