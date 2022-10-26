@@ -4,13 +4,11 @@ API_KEY = getpass("Please input your AlphaVanage API Key: ")
 
 import requests
 import json
-import pprint
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 response = requests.get(request_url)
 parsed_response = json.loads(response.text)
 print(type(parsed_response))
-pprint(parsed_response)
 data = parsed_response["data"]
 
 # Challenge A
